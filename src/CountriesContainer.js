@@ -45,6 +45,12 @@ const CountriesContainer = () => {
                     filterInput.name.toLowerCase()
                 )
                 &&
+                item.capital
+                    .toLowerCase()
+                    .includes(
+                        filterInput.capital.toLowerCase()
+                    )
+                &&
                 item.population >= filterInput.population
                 );
         });
